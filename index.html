@@ -20,6 +20,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.5/swiper-bundle.min.js"></script>
     <style type="text/css">
         /* Slider Container */
+
+ /* Make the swiper container take full height of the screen */
+
+
+        
+
+  .profile-card {
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+
         .carousel-item {
             height: 80vh;
             background-image: url('https://demo.cmssuperheroes.com/themeforest/charg/wp-content/uploads/blog-2.jpg');
@@ -497,7 +509,7 @@
     </div>
     <div id="cms-page" class="cms-page">
         <div class="cms-header-wraps">
-            <div style="background-color:#1f1d1b; ">
+            <div style="background-color:#1f1d1b;">
                 <div class="d-flex justify-content-between align-items-center"
                     style="padding: 11px 28px 11px 120px !important;">
                     <!-- Left-side logos -->
@@ -560,7 +572,9 @@
                     style="color: #ff7f32; display: flex; justify-content: space-between; align-items: center; gap: 27px !important;">
                     <img src="image/uprev.png" alt="Logo 4" style="height: 91px; margin-left: 24px;">
                     <div>
-                        <h4 style="margin: 0; font-weight: 800; font-size: 21px; color: white;text-transform: uppercase;">Uttar Pradesh New &
+                        <h4
+                            style="margin: 0; font-weight: 800; font-size: 21px; color: white;text-transform: uppercase;">
+                            Uttar Pradesh New &
                             Renewable Energy Development Agency</h4>
                         <p style="margin: 0; color: white; font-size: 14px;">Department of Additional Sources of Energy,
                             Government of Uttar Pradesh</p>
@@ -1047,132 +1061,191 @@
 
                                             <!-- hero section old end  -->
 
-
-
-
-
                                             <!-- Image Slider Section -->
-                                            <div class="cms-sliders-wrap cms-slider-layout-1 mt-1">
+                                            <div class="cms-sliders-wrap cms-slider-layout-1 mt-1" style="position: relative;">
+                                                <!-- ✅ OUTSIDE any .container or swiper -->
+<div class="profile-card" id="profileCard"
+    style="  position: absolute;
+    top: 100px;  /* Kitna distance par stick ho, adjust this */
+    right: 0;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5); /* optional */">
+    
+    <!-- Profile Images -->
+   <!-- Profile Images Section -->
+<div style="
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 30px; 
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #2b2b2b, #1e1e1e);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+">
+
+    <!-- Yogi Adityanath -->
+    <div style="text-align: center; flex: 1;">
+        <img src="https://upneda.org.in/MediaGallery/StaffDirectory/Yogi_Adityanath.png"
+            alt="Yogi Adityanath"
+            style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; box-shadow: 0 6px 18px rgba(255, 255, 255, 0.2);">
+        <div style="font-size: 1.2rem; font-weight: 700; color: #ffffff; margin-top: 12px;">
+            Yogi Adityanath
+        </div>
+        <div style="font-size: 0.95rem; color: #dddddd; font-weight: 500; margin-top: 6px;">
+            Hon'ble Chief Minister<br>Uttar Pradesh
+        </div>
+    </div>
+
+    <!-- Divider Arrow -->
+    <div style="font-size: 28px; color: #ffffffcc;">
+        <span style="display: inline-block; transform: rotate(90deg);">➤</span>
+    </div>
+
+    <!-- Narendra Modi -->
+    <div style="text-align: center; flex: 1;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Official_Photograph_of_Prime_Minister_Narendra_Modi_Portrait.png/250px-Official_Photograph_of_Prime_Minister_Narendra_Modi_Portrait.png"
+            alt="PM Modi"
+            style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; box-shadow: 0 6px 18px rgba(255, 255, 255, 0.2);">
+        <div style="font-size: 1.2rem; font-weight: 700; color: #ffffff; margin-top: 12px;">
+            Narendra Modi
+        </div>
+        <div style="font-size: 0.95rem; color: #dddddd; font-weight: 500; margin-top: 6px;">
+            Hon'ble Prime Minister<br>India
+        </div>
+    </div>
+</div>
+
+    <!-- Badge -->
+    <div class="profile-badge"
+        style="background-color: #ff6600; padding: 5px 20px; border-radius: 30px; color: white; font-weight: bold; margin-top: 15px;">
+        Leadership in Progress
+    </div>
+
+    <!-- Icon -->
+    <div class="profile-icon" style="margin-top: 20px; font-size: 40px;">
+        <span class="bi bi-lightbulb"></span>
+    </div>
+
+    <!-- Description -->
+    <div class="profile-description"
+        style="font-size: 1rem; color: #f2f2f2; margin-top: 15px;">
+        Yogi Adityanath’s and Narendra Modi’s leadership is steering India and Uttar Pradesh toward a greener future, with significant strides in electric vehicle infrastructure and policies.
+    </div>
+</div>
+
+
+                                                    
+                                                <!-- Swiper Container -->
                                                 <div
                                                     class="cms-slider-container swiper-container cms-swiper-arrows-true cms-swiper-dots-true">
-                                                    <div class="swiper-wrapper">
-                                               <!-- First Slide: Uttar Pradesh Electric Vehicle Development -->
-<div class="swiper-slide">
+                                                    <div class="swiper-wrapper" >
+                                                        <!-- First Slide: Uttar Pradesh Electric Vehicle Development -->
+                                                        <div class="swiper-slide">
+                                                            <div class="cms-slide-img"
+                                                                style="position: relative; background-image: url('https://demo.cmssuperheroes.com/themeforest/charg/wp-content/uploads/charg-34.jpg'); height: 80vh; background-size: cover;">
+                                                                <div class="cms-slide-img-overlay cms-overlay"></div>
+                                                            </div>
+                                                            <div class="cms-slide-content cms-overlay container">
+                                                                <div class="cms-slide-content-inner h-100 pt-30"
+                                                                    style="margin-left: -156px;">
+                                                                    <div class="row gutters-30 mt-0 text-left align-items-center"
+                                                                        style="width: 56% !important;">
+                                                                        <div class="col cms-slider-content-text"
+                                                                            style="display: flex; justify-content: center; align-items: start; flex-direction: column;">
+                                                                            <div class="small-heading pb-7 text-white">
+                                                                                Uttar Pradesh: Leading the Green
+                                                                                Revolution
+                                                                            </div>
+                                                                            <div class="large-heading text-white"
+                                                                                style="font-size: 3rem; font-weight: bold; text-transform: uppercase;">
+                                                                                Accelerating Electric Vehicle Growth in
+                                                                                UP
+                                                                            </div>
+                                                                            <div class="description pt-20 text-white"
+                                                                                style="font-size: 1.5rem; font-weight: lighter;">
+                                                                                Uttar Pradesh is rapidly becoming a hub
+                                                                                for electric vehicles with the
+                                                                                government’s support for clean energy,
+                                                                                infrastructure development, and electric
+                                                                                vehicle-friendly policies. The state is
+                                                                                driving the adoption of electric
+                                                                                vehicles to reduce carbon emissions and
+                                                                                improve air quality, creating a
+                                                                                sustainable future for its citizens.
+                                                                            </div>
+                                                                            <div class="cms-slider-buttons pt-35"
+                                                                                style="display: flex; justify-content: center; align-items: start; flex-direction: column; gap: 10px;">
+                                                                                <a href="#"
+                                                                                    class="btn btn-success text-white"
+                                                                                    style="padding: 15px 30px; font-size: 18px; font-weight: bold;">Explore
+                                                                                    Electric Vehicle Solutions</a>
+                                                                                <a href="#"
+                                                                                    class="btn btn-light text-primary"
+                                                                                    style="padding: 15px 30px; font-size: 18px; font-weight: bold;">Know
+                                                                                    More About EV Policies</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-    <div class="cms-slide-img" style="position: relative; background-image: url('https://demo.cmssuperheroes.com/themeforest/charg/wp-content/uploads/charg-34.jpg'); height: 80vh; background-size: cover;">
-        <div class="cms-slide-img-overlay cms-overlay">
-
-            <!-- Profile Card Section -->
-            <div class="profile-card" style="position: absolute; top: -31px; right: 33px; width: 100%; max-width: 500px; border-radius: 15px; padding: 30px; color: white; text-align: center; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); margin: 50px auto;">
-                <!-- Profile Image -->
-                <img src="https://upneda.org.in/MediaGallery/StaffDirectory/Yogi_Adityanath.png" alt="Yogi Adityanath" class="profile-img" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);">
-
-                <!-- Name and Title -->
-                <div class="profile-name" style="font-size: 2rem; font-weight: bold; margin-top: 20px;">Yogi Aditya Nath</div>
-                <div class="profile-title" style="font-size: 1.2rem; margin-top: 10px; font-weight: 600; color: #f2f2f2;">Hon'ble Chief Minister, Uttar Pradesh</div>
-
-                <!-- Badge -->
-                <div class="profile-badge" style="background-color: #ff6600; padding: 5px 20px; border-radius: 30px; color: white; font-weight: bold; margin-top: 15px;">Leadership in Progress</div>
-
-                <!-- Icon or text below the badge -->
-                <div class="profile-icon" style="margin-top: 20px; font-size: 40px;">
-                    <span class="bi bi-lightbulb"></span>
-                </div>
-
-                <!-- Description text -->
-                <div class="profile-description" style="font-size: 1rem; color: #f2f2f2; margin-top: 15px;">
-                    Yogi Adityanath’s leadership is steering Uttar Pradesh toward a greener future, with significant strides in electric vehicle infrastructure and policies.
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="cms-slide-content cms-overlay container">
-        <div class="cms-slide-content-inner h-100 pt-30" style="margin-left: -156px;">
-            <div class="row gutters-30 mt-0 text-left align-items-center" style="width: 56% !important;">
-                <div class="col cms-slider-content-text" style="display: flex; justify-content: center; align-items: start; flex-direction: column;">
-                    <div class="small-heading pb-7 text-white">
-                        Uttar Pradesh: Leading the Green Revolution
-                    </div>
-                    <div class="large-heading text-white" style="font-size: 3rem; font-weight: bold; text-transform: uppercase;">
-                        Accelerating Electric Vehicle Growth in UP
-                    </div>
-                    <div class="description pt-20 text-white" style="font-size: 1.5rem; font-weight: lighter;">
-                        Uttar Pradesh is rapidly becoming a hub for electric vehicles with the government’s support for clean energy, infrastructure development, and electric vehicle-friendly policies. The state is driving the adoption of electric vehicles to reduce carbon emissions and improve air quality, creating a sustainable future for its citizens.
-                    </div>
-                    <div class="cms-slider-buttons pt-35" style="display: flex; justify-content: center; align-items: start; flex-direction: column; gap: 10px;">
-                        <a href="#" class="btn btn-success text-white" style="padding: 15px 30px; font-size: 18px; font-weight: bold;">Explore Electric Vehicle Solutions</a>
-                        <a href="#" class="btn btn-light text-primary" style="padding: 15px 30px; font-size: 18px; font-weight: bold;">Know More About EV Policies</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-                
-<!-- Second Slide: Updated with Image and Text -->
-<div class="swiper-slide">
-    <div class="cms-slide-img"
-        style="position: relative; background-image: url('https://demo.cmssuperheroes.com/themeforest/charg/wp-content/uploads/charg-34.jpg'); height: 80vh; background-size: cover;">
-        <div class="cms-slide-img-overlay cms-overlay">
-
-            <!-- Profile Card Section -->
-            <div class="profile-card" style="position: absolute; top: -31px; right: 33px; width: 100%; max-width: 500px; border-radius: 15px; padding: 30px; color: white; text-align: center; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); margin: 50px auto;">
-                <!-- Profile Image -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Official_Photograph_of_Prime_Minister_Narendra_Modi_Portrait.png/250px-Official_Photograph_of_Prime_Minister_Narendra_Modi_Portrait.png"
-                    alt="PM Modi" class="profile-img" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);">
-
-                <!-- Name and Title -->
-                <div class="profile-name" style="font-size: 2rem; font-weight: bold; margin-top: 20px;">Narendra Modi</div>
-                <div class="profile-title" style="font-size: 1.2rem; margin-top: 10px; font-weight: 600; color: #f2f2f2;">Hon'ble Prime Minister, India</div>
-
-                <!-- Badge -->
-                <div class="profile-badge" style="background-color: #ff6600; padding: 5px 20px; border-radius: 30px; color: white; font-weight: bold; margin-top: 15px;">Visionary Leadership</div>
-
-                <!-- Icon or text below the badge -->
-                <div class="profile-icon" style="margin-top: 20px; font-size: 40px;">
-                    <span class="bi bi-lightbulb"></span>
-                </div>
-
-                <!-- Description text -->
-                <div class="profile-description" style="font-size: 1rem; color: #f2f2f2; margin-top: 15px;">
-                    Narendra Modi has transformed India with a focus on infrastructure, economic growth, and social development for all.
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="cms-slide-content cms-overlay container">
-        <div class="cms-slide-content-inner h-100 pt-30" style="margin-left: -156px;">
-            <div class="row gutters-30 mt-0 text-left align-items-center" style="width: 56% !important;">
-                <div class="col cms-slider-content-text" style="display: flex; justify-content: center; align-items: start; flex-direction: column;">
-                    <div class="small-heading pb-7 text-white">
-                        Empowering India's Growth for a Bright Future
-                    </div>
-                    <div class="large-heading text-white" style="font-size: 3rem; font-weight: bold; text-transform: uppercase;">
-                        Sustainable Solutions for Green Energy and Innovation
-                    </div>
-                    <div class="description pt-20 text-white" style="font-size: 1.5rem; font-weight: lighter;">
-                        Under the leadership of Prime Minister Narendra Modi, India is making rapid strides in green energy solutions, promoting sustainable growth, and embracing cutting-edge technologies for a brighter future.
-                    </div>
-                    <div class="cms-slider-buttons pt-35" style="display: flex; justify-content: center; align-items: start; flex-direction: column; gap: 10px;">
-                        <a href="#"
-                            class="btn btn-success text-white"
-                            style="padding: 15px 30px; font-size: 18px; font-weight: bold;">Discover India's Green Future</a>
-                        <a href="#"
-                            class="btn btn-light text-primary"
-                            style="padding: 15px 30px; font-size: 18px; font-weight: bold;">Learn More About India's Development</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+                                                        <!-- Second Slide: Updated with Image and Text -->
+                                                        <div class="swiper-slide">
+                                                            <div class="cms-slide-img"
+                                                                style="position: relative; background-image: url('https://demo.cmssuperheroes.com/themeforest/charg/wp-content/uploads/charg-34.jpg'); height: 80vh; background-size: cover;">
+                                                                <div class="cms-slide-img-overlay cms-overlay"></div>
+                                                            </div>
+                                                            <div class="cms-slide-content cms-overlay container">
+                                                                <div class="cms-slide-content-inner h-100 pt-30"
+                                                                    style="margin-left: -156px;">
+                                                                    <div class="row gutters-30 mt-0 text-left align-items-center"
+                                                                        style="width: 56% !important;">
+                                                                        <div class="col cms-slider-content-text"
+                                                                            style="display: flex; justify-content: center; align-items: start; flex-direction: column;">
+                                                                            <div class="small-heading pb-7 text-white">
+                                                                                Empowering India's Growth for a Bright
+                                                                                Future
+                                                                            </div>
+                                                                            <div class="large-heading text-white"
+                                                                                style="font-size: 3rem; font-weight: bold;text-transform: uppercase;">
+                                                                                Sustainable Solutions for Green Energy
+                                                                                and Innovation
+                                                                            </div>
+                                                                            <div class="description pt-20 text-white"
+                                                                                style="font-size: 1.5rem; font-weight: lighter;">
+                                                                                Under the leadership of Prime Minister
+                                                                                Narendra Modi, India is making rapid
+                                                                                strides in green energy solutions,
+                                                                                promoting sustainable growth, and
+                                                                                embracing cutting-edge technologies for
+                                                                                a brighter future.
+                                                                            </div>
+                                                                            <div class="cms-slider-buttons pt-35"
+                                                                                style="display: flex; justify-content: center; align-items: start; flex-direction: column; gap: 10px;">
+                                                                                <a href="#"
+                                                                                    class="btn btn-success text-white"
+                                                                                    style="padding: 15px 30px; font-size: 18px; font-weight: bold;">Discover
+                                                                                    India's Green Future</a>
+                                                                                <a href="#"
+                                                                                    class="btn btn-light text-primary"
+                                                                                    style="padding: 15px 30px; font-size: 18px; font-weight: bold;">Learn
+                                                                                    More About India's Development</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
                                                     </div>
 
@@ -1202,7 +1275,7 @@
 
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -5929,6 +6002,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
     <script>
+
+
+
         // Initialize Swiper
         const swiper = new Swiper('.swiper-container', {
             effect: 'cube',  // 3D effect
@@ -5946,12 +6022,25 @@
                 prevEl: '.swiper-button-prev',
             },
             cubeEffect: {
-                shadow: true,
-                slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
+                shadow: false,
+                slideShadows: false,
+                shadowOffset: 0,
+                shadowScale: 1,
             },
         });
+
+
+
+window.onscroll = function () {
+        var profileCard = document.getElementById('profileCard');
+
+        if (window.scrollY > 100) {
+            profileCard.style.transform = 'translateY(-30px)';
+        } else {
+            profileCard.style.transform = 'translateY(0)';
+        }
+    };
+
     </script>
 
     <script>
